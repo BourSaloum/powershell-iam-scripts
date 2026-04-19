@@ -1,3 +1,6 @@
+# Import de la connexion Entra ID
+. ../utils/connect-entra.ps1
+
 # Connexion à Microsoft Entra ID
 Connect-MgGraph
 
