@@ -1,13 +1,13 @@
-# 1️⃣ Connexion à Microsoft Entra ID
+# Connexion à Microsoft Entra ID
 Connect-MgGraph
 
-# 2️⃣ Informations de l'utilisateur
+# Informations de l'utilisateur
 $Prenom = "Jean"
 $Nom = "Dupont"
 $UPN = "jean.dupont@labiam2025.onmicrosoft.com"
 $MotDePasseTemp = "TempP@ss123!"
 
-# 3️⃣ Création de l'utilisateur
+# Création de l'utilisateur
 New-MgUser `
  -AccountEnabled $true `
  -DisplayName "$Prenom $Nom" `
@@ -18,4 +18,4 @@ New-MgUser `
      ForceChangePasswordNextSignIn = $true
  }
 
-Write-Host "✅ Utilisateur créé avec succès"
+Write-Host "Utilisateur créé avec succès"
